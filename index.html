@@ -1,38 +1,561 @@
-<!DOCTYPE html>
-<html>
+
+  <!DOCTYPE html>
+
+<html lang="en">
 <head>
-    <title>Lomi Adane | Data & Information Systems</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Lomi Adane | Data Analyst & Research Analyst</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f5f7fa;
+        color: #1f2937;
+        line-height: 1.6;
+    }
+
+    /* Navigation */
+    nav {
+        background: #111827;
+        padding: 18px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    nav .logo {
+        color: white;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+    }
+
+    nav ul li a {
+        color: #d1d5db;
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    nav ul li a:hover {
+        color: white;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 90vh;
+        display: flex;
+        align-items: center;
+        padding: 80px 8%;
+        background: linear-gradient(135deg, #111827, #1e3a5f);
+        color: white;
+    }
+
+    .hero-content {
+        max-width: 850px;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+        font-weight: normal;
+        color: #cbd5e1;
+        margin-bottom: 25px;
+    }
+
+    .hero p {
+        font-size: 18px;
+        color: #e5e7eb;
+        max-width: 700px;
+        margin-bottom: 35px;
+    }
+
+    .buttons a {
+        display: inline-block;
+        padding: 13px 24px;
+        margin-right: 12px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .primary {
+        background: white;
+        color: #111827;
+    }
+
+    .secondary {
+        border: 1px solid #d1d5db;
+        color: white;
+    }
+
+    /* Sections */
+    section {
+        padding: 80px 8%;
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 34px;
+        margin-bottom: 45px;
+        color: #111827;
+    }
+
+    .about {
+        max-width: 850px;
+        margin: auto;
+        text-align: center;
+        font-size: 18px;
+        color: #4b5563;
+    }
+
+    /* Skills */
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 20px;
+    }
+
+    .skill {
+        background: white;
+        padding: 25px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        font-weight: bold;
+    }
+
+    /* Projects */
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+
+    .project-card {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+        transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+        color: #1e3a5f;
+        margin-bottom: 15px;
+    }
+
+    .project-card p {
+        color: #6b7280;
+        margin-bottom: 20px;
+    }
+
+    .project-card a {
+        color: #1e3a5f;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    /* Experience */
+    .experience {
+        max-width: 850px;
+        margin: auto;
+    }
+
+    .experience-item {
+        background: white;
+        padding: 25px;
+        margin-bottom: 20px;
+        border-left: 4px solid #1e3a5f;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+
+    .experience-item h3 {
+        color: #111827;
+    }
+
+    .experience-item p {
+        color: #6b7280;
+    }
+
+    /* Contact */
+    .contact {
+        text-align: center;
+        background: #111827;
+        color: white;
+    }
+
+    .contact .section-title {
+        color: white;
+    }
+
+    .contact p {
+        margin-bottom: 15px;
+        color: #d1d5db;
+    }
+
+    .contact a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+        background: #0b1120;
+        color: #9ca3af;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    /* Mobile */
+    @media (max-width: 700px) {
+
+        nav {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        nav ul {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+        }
+
+        .hero h2 {
+            font-size: 22px;
+        }
+
+        section {
+            padding: 60px 6%;
+        }
+    }
+</style>
+```
+
 </head>
 
 <body>
 
-    <h1>Lomi Adane</h1>
-    <h2>Data Analyst | Research Analyst | Information Systems</h2>
+```
+<!-- Navigation -->
+<nav>
+    <div class="logo">Lomi Adane</div>
+
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+
+<!-- Hero Section -->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>Lomi Adane</h1>
+
+        <h2>
+            Data Analyst | Research Analyst | Information Systems Professional
+        </h2>
+
+        <p>
+            Information Systems professional with experience in data analysis,
+            research, database systems, machine learning, and healthcare
+            operations research. I use data and technology to transform
+            complex information into meaningful insights.
+        </p>
+
+        <div class="buttons">
+
+            <a href="#projects" class="primary">
+                View My Work
+            </a>
+
+            <a href="#contact" class="secondary">
+                Contact Me
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- About -->
+<section id="about">
+
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about">
+
+        <p>
+            I am an Information Systems professional and researcher with
+            experience in data analytics, database systems, machine learning,
+            and academic research.
+        </p>
+
+        <br>
+
+        <p>
+            My background combines technical skills with research and
+            problem-solving. I am particularly interested in using data,
+            analytics, and artificial intelligence to improve decision-making
+            and operational performance.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- Skills -->
+<section id="skills">
+
+    <h2 class="section-title">Technical Skills</h2>
+
+    <div class="skills">
+
+        <div class="skill">Python</div>
+        <div class="skill">SQL</div>
+        <div class="skill">Power BI</div>
+        <div class="skill">Tableau</div>
+        <div class="skill">Microsoft Excel</div>
+        <div class="skill">Google Sheets</div>
+        <div class="skill">Machine Learning</div>
+        <div class="skill">Deep Learning</div>
+        <div class="skill">Database Systems</div>
+        <div class="skill">Data Visualization</div>
+        <div class="skill">Data Analysis</div>
+        <div class="skill">Research Analysis</div>
+
+    </div>
+
+</section>
+
+
+<!-- Projects -->
+<section id="projects">
+
+    <h2 class="section-title">Featured Projects</h2>
+
+    <div class="projects">
+
+        <div class="project-card">
+
+            <h3>Patient Flow Prediction</h3>
+
+            <p>
+                Machine learning project focused on predicting patient flow
+                in emergency departments to support operational planning
+                and resource allocation.
+            </p>
+
+            <a href="#">
+                View Project →
+            </a>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <h3>Healthcare Operations Simulation</h3>
+
+            <p>
+                Research project analyzing emergency department workflow,
+                patient flow, bottlenecks, and resource allocation using
+                simulation techniques.
+            </p>
+
+            <a href="#">
+                View Project →
+            </a>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <h3>Language Identification Using Deep Learning</h3>
+
+            <p>
+                Research project investigating language identification in
+                low-resource multilingual document images using deep
+                learning techniques.
+            </p>
+
+            <a href="#">
+                View Research →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Research -->
+<section id="research">
+
+    <h2 class="section-title">Research</h2>
+
+    <div class="experience">
+
+        <div class="experience-item">
+
+            <h3>
+                Healthcare Operations Management
+            </h3>
+
+            <p>
+                Research involving simulation and analysis of healthcare
+                operations, patient flow, workflow bottlenecks, and
+                resource allocation.
+            </p>
+
+        </div>
+
+
+        <div class="experience-item">
+
+            <h3>
+                Artificial Intelligence & Machine Learning
+            </h3>
+
+            <p>
+                Research interests include machine learning, deep learning,
+                low-resource language technologies, and artificial
+                intelligence applications for social good.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Experience -->
+<section id="experience">
+
+    <h2 class="section-title">Professional Experience</h2>
+
+    <div class="experience">
+
+        <div class="experience-item">
+
+            <h3>Information Systems Lecturer & Researcher</h3>
+
+            <p>
+                University of Gondar
+            </p>
+
+            <p>
+                Teaching database systems, data structures and algorithms,
+                internet programming, and information systems while
+                participating in research and academic projects.
+            </p>
+
+        </div>
+
+
+        <div class="experience-item">
+
+            <h3>Data & Operations Experience</h3>
+
+            <p>
+                Experience working in a high-volume service environment,
+                supporting operations, inventory, customer service,
+                and team coordination.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Contact -->
+<section id="contact" class="contact">
+
+    <h2 class="section-title">Let's Connect</h2>
 
     <p>
-        I am an Information Systems professional with experience in
-        data analysis, research, machine learning, and database systems.
+        I am interested in opportunities in data analytics,
+        research analytics, information systems, and technology.
     </p>
 
-    <h2>Skills</h2>
-    <p>Python | SQL | Power BI | Tableau | Excel | Machine Learning</p>
-
-    <h2>Projects</h2>
-
-    <h3>Patient Flow Prediction</h3>
     <p>
-        Machine learning project focused on predicting patient flow
-        in emergency departments.
+        Email:
+        <a href="mailto:your-email@example.com">
+            your-email@example.com
+        </a>
     </p>
 
-    <h3>Healthcare Operations Simulation</h3>
     <p>
-        Research project analyzing workflow, patient flow,
-        bottlenecks, and resource allocation.
+        GitHub:
+        <a href="#" target="_blank">
+            View My GitHub
+        </a>
     </p>
 
-    <h2>Contact</h2>
-    <p>Email: your-email@example.com</p>
+    <p>
+        LinkedIn:
+        <a href="#" target="_blank">
+            View My LinkedIn
+        </a>
+    </p>
+
+</section>
+
+
+<!-- Footer -->
+<footer>
+
+    <p>
+        © 2026 Lomi Adane. All Rights Reserved.
+    </p>
+
+</footer>
+```
 
 </body>
 </html>
